@@ -1,0 +1,50 @@
+body {
+	background-color: #99cc00;
+	color: #ffffff;
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+a {
+	color: #ffffff;
+	background-color: #000000;
+}
+a:hover {
+
+}
+a:visited {
+
+}
+a:active {
+
+}
+
+.wrapper {
+	width: 980px;
+	margin: 0 auto;
+}
+
+nav{
+
+}
+
+nav ul li{
+	display: inline;
+	margin-right: 10px;
+}
+
+nav ul li a{
+	color: #000000;
+	text-decoration: none;
+	background-color: #232380;
+	padding: 10px 15px;
+	text-transform: uppercase;
+}
+
+nav ul li a:hover {
+	background-color: #232323;
+}
+
+main {
+	overflow: auto;
+}
