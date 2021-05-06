@@ -1,12 +1,15 @@
 /*	body content */
 
 body {
-	background-color: #181818;
+	background-color: #080705;
 	color: #2F004F;
 	font-family: sans-serif;
+
+	/*setting the font size to a dynamic wisth so that it fits the browser size*/
 	font-size: 1.2vw;
 }
 
+/*setting the page size to 75% of the browser width*/
 .wrapper {
 	width: 75%;
 	margin: auto;
@@ -16,78 +19,158 @@ body {
 
 header{
 		color: #ACEDFF;
-		border-bottom: .1vh solid white;
+
+		/*creating a line beneath the header to separate it from the body.
+		I chose to use pixels here rather than a dynamic size because i dont want it to become thicker when increasing*/
+		border-bottom: 1px solid white;
 }
 
 nav{
+
+	/*setting the links in the navigation to be beside the logo*/
 	display: inline-block;
+
+	/*making the navigation 70% of the wrapper so that it fits beside the h1 tag which is the logo*/
 	width: 70%;
 }
 
 nav ul li{
+
+	/*making the links sit side by side rather than stacked*/
 	display: inline;
+
+	/*giving them padding so that they cover the header correctly*/
 	padding: 9.5%;
 }
 
 nav ul li a{
 	
+	/*set the navigation to be all uppercase with the exception of teh logo*/
 	text-transform: uppercase;
 }
 
 nav ul li a:hover {
+
+	/*when the curser hovers over the link it will set the colour to this*/
 	color: #CFE0C3;
 }
 
 h1{
+	/*setting the logo to sit beside the navigation*/
 	display: inline-block;
 	width: 28%;
 }
 
 a {
+	/*set the colour of the links to the light blue which is used throughout the site*/
 	color: #ACEDFF;
+
+	/*removing the underline of teh links so they're more aesthetically appealing*/
 	text-decoration: none;
-}
-a:hover {
-
-}
-a:visited {
-
-}
-a:active {
-
 }
 
 /*	main content */
 main {
+
+	/*separating the main content from the line created in the header*/
 	margin-top: 1%;
 	overflow: auto;
 }
 
+h2{
+	/*simply making the heading look a bit better*/
+	margin-left: 1%;
+}
+
 img{
-	width: 60%;
+	/*forcing the image to cover the width of the wrapper. creating somewhat of a hero image.*/
+	width:100%;
 }
 
-p{
-	text-align: center;
+li{
+	/*separating the list items a little more*/
+	margin-bottom: 1%;
 }
 
-.right{
+/* the righti, lefti, rightp, leftp classes each make the content float to their respective sides*/
+.rightp{
 	padding: 2%;
 	width: 36%;
 	float: right;
 }
 
+.leftp{
+	padding:2%;
+	width: 36%;
+	float: left;
+}
+
+.righti{
+	width: 58%;
+	display: inline-block;
+}
+
+.lefti{
+	width:58%;
+	display: inline-block;
+}
+
+
+/*the three box classes create the boxes around the content. the only difference is the background colour*/
 .box1{
 	background-color: #CFE0C3;
 	padding: 10px;
 	display: inline-block;
+	margin-bottom: 1%;
+}
+
+.box2{
+	background-color: #8B8BAE;
+	padding: 10px;
+	display: inline-block;
+	margin-bottom: 1%;
+}
+
+.box3{
+	background-color: #ACEDFF;
+	padding: 10px;
+	display: inline-block;
+	margin-bottom: 1%;
+}
+
+/*similar to the box classes but needed to allow images to sized differently*/
+.gallery{
+	background-color: #ACEDFF;
+	padding: 10px;
+	display: inline-block;
+	margin-bottom: 1%;
+}
+
+/*setting the image sizes for teh gallery*/
+.gallery img{
+	padding: 1%;
+	height: 280px;
+	width: 210px;
+
+	/*setting opacity to 60% so that we can change it as the mouse hobers over to indicate to the user that it is clickable*/
+	opacity: 60%;
+
+	/*forcing the image to be cropped to the size that has been set*/
+	object-fit: cover;
+}
+
+/*when the curser hovers over teh image it sets the opacity to 100%*/
+.gallery img:hover{
+	opacity: 100%;
 }
 
 /*	footer */
 
 footer{
 	margin-top: 1%;
+
+	/*again creating the white line to separate the main content from the footer*/
 	border-top: .01vh solid white;
 	color: white;
-	width: ;
+	text-align: center;
 }
